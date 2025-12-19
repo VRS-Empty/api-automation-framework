@@ -23,6 +23,6 @@ def test_saucedemo_login(page: Page):
 
     print("[Step] Verifying login success...")
 
-    expect(page.locator(".tittle")).to_have_text("Products")
+    expect(page.locator(".title")).to_have_text("Products", timeout=10000)
 
     expect(page.locator(".shopping_cart_link")).to_be_visible
